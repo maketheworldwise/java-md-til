@@ -28,6 +28,7 @@
 - [단항 연산자는 뭘까?](day02/unaryOperator.md)
 - [형 변환](day02/casting.md)
 - [&,|,^ 연산자](day02/operator.md)
+- [label 예약어?](day02/label.md)
 - [피드백](day02/feedback.md)
 
 
@@ -40,3 +41,4 @@
 - 가비지콜렉터?
 - String?
 - 참조 자료형은 그 주소 값이 같은지 확인한다?
+- Enum?
