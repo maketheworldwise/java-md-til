@@ -1,6 +1,7 @@
 # java-md-til
 
-책은 📚 자바의 신이며, Day는 피드백을 받은 날을 기준으로 한다.
+- 책 📚  : 자바의 신 <br>
+- Day ☀️ : 피드백을 받은 날을 기준
 
 ## 규칙 🙋‍♂️
 
@@ -29,8 +30,8 @@
 - [형 변환](day02/casting.md)
 - [&,|,^ 연산자](day02/operator.md)
 - [label 예약어?](day02/label.md)
+- [참조 자료형 배열 기본값?](day02/referenceDataType.md)
 - [피드백](day02/feedback.md)
-
 
 ## 책에서 발견한 키워드 🔔
 
@@ -42,3 +43,4 @@
 - String?
 - 참조 자료형은 그 주소 값이 같은지 확인한다?
 - Enum?
+- 자료구조?
