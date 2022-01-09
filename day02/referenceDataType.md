@@ -107,3 +107,90 @@ for(int i = 0; i < oneLoopLength; i++) {
     }
 }
 ```
+
+## 향상된 for문?
+
+자바에서는 Collection이라는 자료 구조를 처리할 때 for 문을 보다 쉽게 사용할 JDK 5 부터 개선된 부분이 있다. 배열의 값만을 처리할 필요가 있을 때는 향상된 for문을 사용하는 것이 편리하다. 단, 1차원과 2차원 배열의 위치를 모르기 때문에 위치를 확인하려면 임시 변수를 두어야 한다.
+
+```java
+int[][] twoDim = {{1,2,3}, {4,5,6}};
+int firstLoopIndex = 0;
+for(int[] dimArray : twoDim) {
+    int secondLoopIndex = 0;
+    for(int data : dimArray) {
+        // 생략
+        secondLoopIndex++;
+    }
+    firstLoopIndex++;
+}
+```
+
+## main의 (String[] args)로 값 전달 ?
+
+main() 메소드의 매개 변수인 args라는 String 배열에 값을 전달하는 방법은 비교적으로 간단하다.
+
+```java
+public class ArrayMain {
+    public static void main(String[] args) {
+        if(arg.length > 0) {
+            for(String arg : args) {
+                System.out.pritnln(arg);
+            }
+        }
+    }
+}
+```
+
+```shell
+# 컴파일
+$ javac ArrayMain.java
+$ java ArrayMain a b c d
+a
+b
+c
+d
+```
+
+---
+
+## 질문에 답해보자 💁‍♂️
+
+**Q1. 배열을 선언할 때 어떤 키워드를 타입 앞이나 뒤에 사용해야 하나요?**
+
+[]
+
+**Q2. 배열의 첫 번째 위치는 0인가요? 1인가요?**
+
+1
+
+**Q3. 배열을 선언할 때 boolean 배열의 크기만 지정했다면 boolean 배열의 [0] 위치에 있는 값은 무엇인가요?**
+
+false
+
+**Q4. ArrayIndexOutOfBoundsException이라는 것은 언제 발생하나요?**
+
+배열의 크기를 넘어섰을 때.
+
+**Q5. 중괄호를 이용하여 배열을 초기화할 때 중괄호 끝에 반드시 어떤 것을 입력해 주어야 하나요?**
+
+세미콜론
+
+**Q6. 2차원 배열을 정의할 때에는 대괄호를 몇 개 지정해야 하나요?**
+
+2
+
+**Q7. 배열을 쉽게 처리해주는 for문의 문법은 어떻게 되나요?**
+
+```java
+for(임시 변수 : 배열) {
+
+}
+```
+
+**Q8. 자바 프로그램에 데이터를 전달해 주려면 클래스 이름 뒤에 어떻게 구분하여 나열하면 되나요?**
+
+클래스명 뒤에 문자열을 나열하여 args 배열에 대입.
+
+**Q9. 자바 프로그램이 시작할 때 전달 받는 내용은 어떤 타입의 배열인가요?**
+
+String
