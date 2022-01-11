@@ -5,7 +5,7 @@
 - [프로세스와 스레드](https://velog.io/@maketheworldwise/%EC%9E%90%EB%B0%94%EC%9D%98-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%8A%A4%EB%A0%88%EB%93%9C)
 - [멀티 프로세싱, 멀티 스레드, 멀티*](https://velog.io/@maketheworldwise/%EB%A9%80%ED%8B%B0-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8B%B1-%EB%A9%80%ED%8B%B0-%EC%8A%A4%EB%A0%88%EB%93%9C-%EB%A9%80%ED%8B%B0)
 
-## 레이스 컨디션? 
+## 레이스 컨디션? 클래스 상태의 단점?
 
 레이스 컨디션은 두 개 이상의 프로세스 혹은 스레드가 공유 자원을 서로 사용하려고 경합(Race)하는 현상을 의미한다. 
 
@@ -26,10 +26,4 @@ String을 선언하는 방식은 <code>new</code> 예약어를 이용한 선언 
 따라서 금융 계산과 같은 정확한 결과를 원할경우 <code>BigDecimal, int long</code>을 사용하는 편이 좋다.
 
 - [float, double, 부동 소수점](https://velog.io/@maketheworldwise/float-double-%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90)
-
-## 상태와 행동의 관계?
-
-## 상태의 단점?
-
-
 
