@@ -32,6 +32,8 @@
 - [label 예약어?](day02/label.md)
 - [참조 자료형 배열 기본값?](day02/referenceDataType.md)
 - [DTO 패턴](day02/dto.md)
+- [static?](day02/static.md)
+- [Pass by value, Pass by reference](day02/pass.md)
 - [피드백](day02/feedback.md)
 
 ## 책에서 발견한 키워드 🔔
@@ -46,7 +48,9 @@
 - Enum?
 - 자료구조?
 
-## 공부를 하면서 생소했던 키워드 🔔
+## 공부를 하면서 중요하거나 생소했던 키워드 🔔
 
 - Short Circuit
 - Overflow, Underflow
+- Overloading
+- <code>String ...str</code>
