@@ -42,6 +42,8 @@
 - [상속은 뭘까?](day03/inherit.md)
 - [Java Docs를 확인하는 방법을 알아보자!](day03/javaDocs.md)
 - [오브젝트 클래스?](day03/object.md)
+- [인터페이스와 추상화](interfaceAndAbstract.md)
+- [final과 enum](day03/finalAndEnum.md)
 - [피드백](day03/feedback.md)
 
 ## 책에서 발견한 키워드 🔔
