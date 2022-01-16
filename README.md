@@ -36,17 +36,27 @@
 - [Pass by value, Pass by reference](day02/pass.md)
 - [피드백](day02/feedback.md)
 
+### Day03
+
+- [패키지와 접근 제어자](day03/packageAndAccessModifier.md)
+- [상속은 뭘까?](day03/inherit.md)
+- [Java Docs를 확인하는 방법을 알아보자!](day03/javaDocs.md)
+- [피드백](day03/feedback.md)
+
 ## 책에서 발견한 키워드 🔔
 
 책에서 발견한 키워드들을 하단에 적어놓고 해당 내용에 대해 숙지되면 취소선을 그어주도록 하자!
 
-- 접근 제어자?
-- static?
+- ~~접근 제어자?~~
+- ~~static?~~
 - 가비지콜렉터?
 - String?
-- 참조 자료형은 그 주소 값이 같은지 확인한다?
+- ~~참조 자료형은 그 주소 값이 같은지 확인한다?~~
 - Enum?
 - 자료구조?
+- ~~- 상속, 다형성~~
+- log4j?
+
 
 ## 공부를 하면서 중요하거나 생소했던 키워드 🔔
 
