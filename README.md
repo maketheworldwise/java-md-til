@@ -42,8 +42,9 @@
 - [상속은 뭘까?](day03/inherit.md)
 - [Java Docs를 확인하는 방법을 알아보자!](day03/javaDocs.md)
 - [오브젝트 클래스?](day03/object.md)
-- [인터페이스와 추상화](interfaceAndAbstract.md)
+- [인터페이스와 추상화](day03/interfaceAndAbstract.md)
 - [final과 enum](day03/finalAndEnum.md)
+- [예외?](day03/exception.md)
 - [피드백](day03/feedback.md)
 
 ## 책에서 발견한 키워드 🔔
@@ -61,6 +62,7 @@
 - log4j?
 - 가비지컬렉터
 - 쓰레드
+- NullPointerException (Pointer?)
 
 ## 공부를 하면서 중요하거나 생소했던 키워드 🔔
 
@@ -68,3 +70,4 @@
 - Overflow, Underflow
 - Overloading
 - <code>String ...str</code>
+- <code>System.err</code>
