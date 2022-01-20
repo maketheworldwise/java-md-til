@@ -45,6 +45,8 @@
 - [인터페이스와 추상화](day03/interfaceAndAbstract.md)
 - [final과 enum](day03/finalAndEnum.md)
 - [예외?](day03/exception.md)
+- [String](day03/string.md)
+- [어노테이션](day03/annotation.md)
 - [피드백](day03/feedback.md)
 
 ## 책에서 발견한 키워드 🔔
