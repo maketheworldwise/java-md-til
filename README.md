@@ -1,7 +1,7 @@
 # java-md-til
 
 - 책 📚  : 자바의 신 <br>
-- Day ☀️ : 피드백을 받은 날을 기준
+- week ☀️ : 피드백을 받은 날을 기준
 
 ## 규칙 🙋‍♂️
 
@@ -13,41 +13,41 @@
 
 ---
 
-### Day01
+### week01
 
-- [클래스는 뭘까?](day01/class.md)
-- [자바는 어떻게 실행될까?](day01/execute.md)
-- [main() 메소드는 뭘까?](day01/main.md)
-- [클래스와 객체는 뭘까?](day01/classAndObject.md)
-- [변수의 종류](day01/variables.md)
-- [자료형의 종류 (1)](day01/dataTypes1.md)
-- [자료형의 종류 (2)](day01/dataTypes2.md)
-- [피드백](day01/feedback.md)
+- [클래스는 뭘까?](week01/class.md)
+- [자바는 어떻게 실행될까?](week01/execute.md)
+- [main() 메소드는 뭘까?](week01/main.md)
+- [클래스와 객체는 뭘까?](week01/classAndObject.md)
+- [변수의 종류](week01/variables.md)
+- [자료형의 종류 (1)](week01/dataTypes1.md)
+- [자료형의 종류 (2)](week01/dataTypes2.md)
+- [피드백](week01/feedback.md)
 
-### Day02
+### week02
 
-- [단항 연산자는 뭘까?](day02/unaryOperator.md)
-- [형 변환](day02/casting.md)
-- [&,|,^ 연산자](day02/operator.md)
-- [label 예약어?](day02/label.md)
-- [참조 자료형 배열 기본값?](day02/referenceDataType.md)
-- [DTO 패턴](day02/dto.md)
-- [static?](day02/static.md)
-- [Pass by value, Pass by reference](day02/pass.md)
-- [피드백](day02/feedback.md)
+- [단항 연산자는 뭘까?](week02/unaryOperator.md)
+- [형 변환](week02/casting.md)
+- [&,|,^ 연산자](week02/operator.md)
+- [label 예약어?](week02/label.md)
+- [참조 자료형 배열 기본값?](week02/referenceDataType.md)
+- [DTO 패턴](week02/dto.md)
+- [static?](week02/static.md)
+- [Pass by value, Pass by reference](week02/pass.md)
+- [피드백](week02/feedback.md)
 
-### Day03
+### week03
 
-- [패키지와 접근 제어자](day03/packageAndAccessModifier.md)
-- [상속은 뭘까?](day03/inherit.md)
-- [Java Docs를 확인하는 방법을 알아보자!](day03/javaDocs.md)
-- [오브젝트 클래스?](day03/object.md)
-- [인터페이스와 추상화](day03/interfaceAndAbstract.md)
-- [final과 enum](day03/finalAndEnum.md)
-- [예외?](day03/exception.md)
-- [String](day03/string.md)
-- [어노테이션](day03/annotation.md)
-- [피드백](day03/feedback.md)
+- [패키지와 접근 제어자](week03/packageAndAccessModifier.md)
+- [상속은 뭘까?](week03/inherit.md)
+- [Java Docs를 확인하는 방법을 알아보자!](week03/javaDocs.md)
+- [오브젝트 클래스?](week03/object.md)
+- [인터페이스와 추상화](week03/interfaceAndAbstract.md)
+- [final과 enum](week03/finalAndEnum.md)
+- [예외?](week03/exception.md)
+- [String](week03/string.md)
+- [어노테이션](week03/annotation.md)
+- [피드백](week03/feedback.md)
 
 ## 책에서 발견한 키워드 🔔
 
