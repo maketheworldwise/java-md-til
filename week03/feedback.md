@@ -21,3 +21,103 @@ String은 연산을 수행할 때마다 새로운 객체를 생성해낸다고 �
 해시 함수는 임의의 길이의 데이터를 고정된 길이의 데이터로 매핑하는 함수다. 이 때 매칭 전 원래 데이터를 키로, 매핑 후 데이터의 값을 해시 값, 매핑하는 과정을 해싱이라고 한다.
 
 - [Hash? Hash Table? HashCode?](https://velog.io/@maketheworldwise/Hash-Hash-Table-HashCode)
+
+## String length()
+
+- [String의 length() 메소드는 글자 수를 세는게 아니다?!](https://velog.io/@maketheworldwise/String%EC%9D%98-length-%EB%A9%94%EC%86%8C%EB%93%9C%EB%8A%94-%EA%B8%80%EC%9E%90-%EC%88%98%EB%A5%BC-%EC%84%B8%EB%8A%94%EA%B2%8C-%EC%95%84%EB%8B%88%EB%8B%A4)
+
+## 롬복이란?
+
+롬복은 자바 라이브러리로 반복되는 <code>getter, setter, toString .. </code> 등의 반복 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리다.
+
+- 어노테이션 기반의 코드 자동생성을 통한 생산성 향상
+- 반복코드 다이어트를 통해 가독성 및 유지보수성 향상
+- Getter/Setter 외 빌더 패턴이나 로그생성 등 다양한 방면으로 활용 가능
+
+코딩 과정에서는 어노테이션만 보이지만, 실제로 컴파일된 결과물에서는 코드가 생성되어있는 것을 확인할 수 있다.
+
+롬복의 <code>@Data, @toString</code> 어노테이션으로 자동 생성되는 <code>toString()</code> 메소드는 순환 참조 또는 무한재귀호출 문제로 인해 <code>StackOverflowError</code>가 발생할 수도 있다. 따라서 편리하다는 이유로 아무 생각 없이 이용하다가 여러 예외문제가 발생할 수 있다.
+
+![](../images/lombok.png)
+
+대부분의 롬복 어노테이션의 Target과 Retention은 다음과 같다.
+
+- ElementType.TYPE : 타입 선언
+- ElementType.FIELD : 멤버 변수 선언
+- ElementType.METHOD : 메서드 선언
+- RetentionPolicy.SOURCE : 컴파일 전까지만 유효 (컴파일 후에는 사라짐)
+
+```java
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface AllArgsConstructor {}
+
+@Target({ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Builder {}
+
+@Target({ElementType.LOCAL_VARIABLE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Cleanup {}
+
+@Retention(RetentionPolicy.SOURCE)
+@Target({ElementType.TYPE})
+public @interface CustomLog {}
+
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Data {}
+
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface EqualsAndHashCode {}
+
+@Target({ElementType.CONSTRUCTOR, ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
+@Retention(RetentionPolicy.CLASS)
+public @interface Generated {}
+
+@Target({ElementType.FIELD, ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Getter {}
+
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface NoArgsConstructor {}
+
+@Target({ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER, ElementType.LOCAL_VARIABLE, ElementType.TYPE_USE})
+@Retention(RetentionPolicy.CLASS)
+@Documented
+public @interface NonNull {}
+
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface RequiredArgsConstructor {}
+
+@Target({ElementType.FIELD, ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Setter {}
+
+@Target({ElementType.FIELD, ElementType.PARAMETER})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Singular {}
+
+@Target({ElementType.METHOD, ElementType.CONSTRUCTOR})
+@Retention(RetentionPolicy.SOURCE)
+public @interface SneakyThrows {}
+
+@Target({ElementType.METHOD})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Synchronized {}
+
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface ToString {}
+
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface Value {}
+
+@Target({ElementType.FIELD, ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+public @interface With {}
+```
