@@ -46,6 +46,7 @@
 - [final과 enum](week03/finalAndEnum.md)
 - [예외?](week03/exception.md)
 - [String](week03/string.md)
+- [내부 클래스, 익명 클래스](week03/innerAndAnonymousClass.md)
 - [어노테이션](week03/annotation.md)
 - [피드백](week03/feedback.md)
 
@@ -56,7 +57,7 @@
 - ~~접근 제어자?~~
 - ~~static?~~
 - 가비지콜렉터?
-- String?
+- ~~String?~~
 - ~~참조 자료형은 그 주소 값이 같은지 확인한다?~~
 - Enum?
 - 자료구조?
@@ -65,6 +66,7 @@
 - 가비지컬렉터
 - 쓰레드
 - NullPointerException (Pointer?)
+- 캡슐화
 
 ## 공부를 하면서 중요하거나 생소했던 키워드 🔔
 
