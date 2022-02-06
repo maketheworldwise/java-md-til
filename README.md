@@ -55,6 +55,7 @@
 - [자바의 역사](week04/javaHistory.md)
 - [자바랭](week04/javaLang.md)
 - [제네릭](week04/generic.md)
+- [컬렉션 리스트](week04/collectionList.md)
 - [피드백](week04/feedback.md)
 
 ## 책에서 발견한 키워드 🔔
