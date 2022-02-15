@@ -15,11 +15,24 @@ GC에 대한 알고리즘에 대한 내용은 이론적으로 어떤 형태로 �
 
 자바 개발자라면 GC가 Stop-the-world를 왜 발생시키고 왜 발생해야하는지 알아야 하고 각 알고리즘의 차이점 정도로만 개념을 이해하고 넘어가는게 좋다. GC가 중요한 이유는, 실무에서 GC 튜닝을 통해 서버를 늘려 비용을 올리지 않고도 비용 절감의 효과와 트래픽상에서의 긍정적인 효과를 가지기 때문에 반드시 알아둬야 한다.
 
----
+- [가비지 컬렉터는 뭘까?](https://velog.io/@maketheworldwise/%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%ED%84%B0%EB%8A%94-%EB%AD%98%EA%B9%8C)
+- [가비지 컬렉터는 뭘까? (정리)](https://velog.io/@maketheworldwise/%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%ED%84%B0%EB%8A%94-%EB%AD%98%EA%B9%8C-%EC%A0%95%EB%A6%AC)
+- [가비지 컬렉터 종류](https://velog.io/@maketheworldwise/%EA%B0%80%EB%B9%84%EC%A7%80-%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%A2%85%EB%A5%98)
 
-그 외: 
+## 스레드 세이프는 뭘까?
 
-- 컬렉션 내부 로직을 최종 구현체를 기준으로 내부적으로 어떻게 구현해서 어떤 장점이 있고 단점이 있는지를 알아보자!
-- 스레드의 상태값과 어떻게 변경되고 전이가 되는지 알아보자!
-- 스레드 세이프에 대한 개념을 이해해보자!
-- ConcurrentHashMap은 스레드 세이프를 효율적으로 구현하기 위한 자료구조인데, 어떤 개념을 통해서 효율화 시켰는지, 왜 사용하게 되었는지 개념을 이해해보자!
+하나의 function이 한 Thread로 부터 호출되어 실행 중일 때,
+다른 Thread가 동일한 함수를 호출하여 동시에 실행되더라도
+각 Thread에서 함수의 수행 결과가 바르게 나오는 것을 의미한다.
+
+## 스레드의 상태값
+
+- NEW: 스레드가 생성되었지만 아직 실행되지 않은 상태
+- RUNNABLE: 현재 CPU를 점유하고 작업을 수행 중인 상태. 운영체제의 자원 분배로 인해 WAITING 상태가 될 수도 있다.
+- BLOCKED: Monitor를 획득하기 위해 다른 스레드가 락을 해제하기를 기다리는 상태
+- WAITING: <code>wait()</code> 메서드, <code>join()</code> 메서드, <code>park()</code> 메서드 등를 이용해 대기하고 있는 상태
+- TIMED_WAITING: <code>sleep()</code> 메서드, <code>wait()</code> 메서드, <code>join()</code> 메서드, <code>park()</code> 메서드 등을 이용해 대기하고 있는 상태. WAITING 상태와의 차이점은 메서드의 인수로 최대 대기 시간을 명시할 수 있어 외부적인 변화뿐만 아니라 시간에 의해서도 WAITING 상태가 해제될 수 있다는 것이다.
+
+## ConcurrentHashMap
+
+- [ConcurrentHashMap?](https://velog.io/@maketheworldwise/ConcurrentHashMap)
